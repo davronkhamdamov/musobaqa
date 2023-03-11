@@ -1,0 +1,144 @@
+.header {
+    height: 90px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.news_hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0px 120px;
+}
+
+.hero {
+    display: flex;
+    gap: 30px;
+}
+
+.hero_left_content {
+    display: flex;
+    flex-direction: column;
+    gap: 41.3px;
+
+    &__img1 {
+        width: 1009.4px;
+        height: 757.39px;
+        border-radius: 20px;
+    }
+}
+
+.hero_text__content__div1 {
+    width: 1012px;
+    height: auto;
+    background: rgba(14, 16, 20, 0.9);
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    padding: 40px 40px 22px 40px;
+    margin-bottom: 120px;
+}
+
+.hero_text_content__title {
+    width: 932px;
+    height: 88px;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.hero_text_content_text1 {
+    margin-bottom: 25px;
+    width: 932px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+.hero_text_content_img2 {
+    width: 932px;
+    height: 623px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.hero_text_content_text2 {
+    width: 932px;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border-bottom: 1px solid #989898;
+}
+
+.hero_left_bottom_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 23px;
+}
+
+.hero_bottom__it_park {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B0B0B0;
+}
+
+.hero_data {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DEDEDE;
+}
+
+.ulashish_hero {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DEDEDE;
+    cursor: pointer;
+}
+
+.hero_right_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero_right_card {
+    width: 317px;
+    height: 283px;
+    background: rgba(14, 16, 20, 0.9);
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(1px);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.hero_right_card_img {
+    width: 100%;
+    background: rgba(14, 16, 20, 0.9);
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+}
+
+.hero_right_card_text {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 15px 20px;
+}
