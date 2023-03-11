@@ -1,0 +1,155 @@
+header {
+  height: 100vh;
+  background-image: url('../../images/Noise.png');
+
+  &::before {
+    content: url('../../images/Ellipse\ 3.png');
+    position: absolute;
+    top: 140px;
+  }
+  &::after {
+    content: url('../../images/Ellipse\ 4.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(23, 25, 29, 0.7);
+  .nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-family: sans-serif;
+      font-weight: 700;
+    }
+    &__navigator {
+      width: 500px;
+      display: flex;
+      justify-content: space-between;
+      a {
+        color: #fff;
+        font-family: 'Proxima Nova', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+    &__services {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      &__mode {
+        width: 85px;
+        height: 40px;
+        background: #151a1e;
+        border: 1px solid #aaaaaa;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        padding: 7px;
+        user-select: none;
+        img {
+          width: 25px;
+          position: relative;
+          z-index: 1;
+          margin-top: 3px;
+        }
+        .mode-changer {
+          width: 30px;
+          height: 30px;
+          background-color: #5454d4;
+          position: absolute;
+          border-radius: 50%;
+          transition: 0.3s ease-in;
+          top: 4px;
+          left: 58%;
+        }
+      }
+      &__phone {
+        width: 190px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        a {
+          color: white;
+          text-decoration: none;
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          + a {
+            font-weight: 500;
+            font-size: 15px;
+          }
+        }
+      }
+      &__btn {
+        width: 168px;
+        height: 45px;
+        background: #6911ad;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background: rgba(105, 17, 173, 1);
+        }
+        button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+body.dark {
+  background: #fff;
+  header {
+    background-image: url('../../images/background.png'),
+      url('../../images/Rectangle\ 9550.png');
+  }
+  .navbar {
+    background: rgba(23, 25, 29, 0.1);
+    .nav {
+      a {
+        color: #000;
+      }
+      &__services__mode {
+        background: #fff;
+        border: 1px solid transparent;
+        .light {
+          img {
+            filter: invert(0) sepia(93%) saturate(0%) hue-rotate(90deg)
+              brightness(119%) contrast(110%);
+          }
+        }
+        img {
+          filter: invert(0) sepia(93%) saturate(0%) hue-rotate(90deg)
+            brightness(0%) contrast(110%);
+        }
+      }
+      .mode-changer {
+        background-color: rgba(0, 0, 194, 4.4);
+        left: 5%;
+      }
+    }
+  }
+}

@@ -1,10 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    width: 1360px;
-    margin: 0 auto;
-    padding: 0 40px;
+.container {
+  width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+body {
+  background-color: #1e1e1e;
+  transition: 0.5s background-color;
+}
+li {
+  list-style-type: none;
+}
+main {
+  background-image: url('../images/Noise.png');
+}
+body.dark {
+  main {
+    background-image: url('../images//Rectangle\ 9549.png');
+  }
 }

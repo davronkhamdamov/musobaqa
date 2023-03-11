@@ -1,0 +1,71 @@
+.hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__wrap {
+    width: 695px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 190px;
+    &__text {
+      h2 {
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        color: #ffffff;
+        margin-bottom: 40px;
+      }
+      p {
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.button {
+  position: relative;
+  width: 196px;
+  cursor: pointer;
+  &:hover button {
+    width: 196px;
+  }
+
+  button {
+    background: #6911ad;
+    border-radius: 141px;
+    border: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 141px;
+    transition: 0.5s ease-out;
+  }
+  p {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+body.dark {
+  .hero__wrap {
+    &__text {
+      h2,
+      p {
+        color: black;
+      }
+    }
+  }
+}

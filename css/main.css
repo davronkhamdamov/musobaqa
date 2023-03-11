@@ -4,6 +4,12 @@
   font-weight: 700;
   src: url("../fonts/Fontspring-DEMO-proximanovacond-bold.otf");
 }
+@font-face {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FuturaPTDemi.otf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +20,486 @@
   width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+body {
+  background-color: #1e1e1e;
+  transition: 0.5s background-color;
+}
+
+li {
+  list-style-type: none;
+}
+
+main {
+  background-image: url("../images/Noise.png");
+}
+
+body.dark main {
+  background-image: url("../images//Rectangle 9549.png");
+}
+
+header {
+  height: 100vh;
+  background-image: url("../../images/Noise.png");
+}
+header::before {
+  content: url("../../images/Ellipse 3.png");
+  position: absolute;
+  top: 140px;
+}
+header::after {
+  content: url("../../images/Ellipse 4.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(23, 25, 29, 0.7);
+}
+.navbar .nav {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .nav .logo {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.navbar .nav__navigator {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .nav__navigator a {
+  color: #fff;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+.navbar .nav__services {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.navbar .nav__services__mode {
+  width: 85px;
+  height: 40px;
+  background: #151a1e;
+  border: 1px solid #aaaaaa;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 7px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.navbar .nav__services__mode img {
+  width: 25px;
+  position: relative;
+  z-index: 1;
+  margin-top: 3px;
+}
+.navbar .nav__services__mode .mode-changer {
+  width: 30px;
+  height: 30px;
+  background-color: #5454d4;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+  top: 4px;
+  left: 58%;
+}
+.navbar .nav__services__phone {
+  width: 190px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar .nav__services__phone a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.navbar .nav__services__phone a + a {
+  font-weight: 500;
+  font-size: 15px;
+}
+.navbar .nav__services__btn {
+  width: 168px;
+  height: 45px;
+  background: #6911ad;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .nav__services__btn:hover {
+  background: rgb(105, 17, 173);
+}
+.navbar .nav__services__btn button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+body.dark {
+  background: #fff;
+}
+body.dark header {
+  background-image: url("../../images/background.png"), url("../../images/Rectangle 9550.png");
+}
+body.dark .navbar {
+  background: rgba(23, 25, 29, 0.1);
+}
+body.dark .navbar .nav a {
+  color: #000;
+}
+body.dark .navbar .nav__services__mode {
+  background: #fff;
+  border: 1px solid transparent;
+}
+body.dark .navbar .nav__services__mode .light img {
+  filter: invert(0) sepia(93%) saturate(0%) hue-rotate(90deg) brightness(119%) contrast(110%);
+}
+body.dark .navbar .nav__services__mode img {
+  filter: invert(0) sepia(93%) saturate(0%) hue-rotate(90deg) brightness(0%) contrast(110%);
+}
+body.dark .navbar .nav .mode-changer {
+  background-color: rgb(0, 0, 194);
+  left: 5%;
+}
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__wrap {
+  width: 695px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 190px;
+}
+.hero__wrap__text h2 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.hero__wrap__text p {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.button {
+  position: relative;
+  width: 196px;
+  cursor: pointer;
+}
+.button:hover button {
+  width: 196px;
+}
+.button button {
+  background: #6911ad;
+  border-radius: 141px;
+  border: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 141px;
+  transition: 0.5s ease-out;
+}
+.button p {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 18px;
+  color: #fff;
+}
+
+body.dark .hero__wrap__text h2,
+body.dark .hero__wrap__text p {
+  color: black;
+}
+
+.kompny {
+  padding-top: 200px;
+}
+.kompny__title {
+  font-family: Futura PT, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.kompny__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.kompny__wrapper_text {
+  max-width: 569px;
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.kompny__wrap {
+  gap: 40px;
+}
+.kompny__wrap_ul {
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+  padding-bottom: 40px;
+}
+.kompny__wrap_ul--list {
+  text-align: center;
+}
+.kompny__wrap_ul--list__div_span {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+  background: -webkit-linear-gradient(rgba(0, 40, 248, 0.89), rgb(105, 17, 173));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.kompny__wrap_ul--list__div_text {
+  padding-top: 12px;
+  font-family: Futura PT, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+body.dark .kompny__title {
+  color: #000;
+}
+body.dark .kompny p {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.afzallik {
+  padding: 100px 0;
+  background-image: url("../../images/lines.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.afzallik__title {
+  text-align: center;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+.afzallik__ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.afzallik__ul_list {
+  margin: 0 auto;
+  padding: 25px;
+  width: 403px;
+  background: rgba(17, 19, 23, 0.3);
+  border: 1px solid #4e4e4e;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 20px;
+  transition: box-shadow 0.3s;
+}
+.afzallik__ul_list:hover {
+  box-shadow: 5px 4px 14px rgba(255, 255, 255, 0.55);
+}
+.afzallik__ul_list--title {
+  padding: 30px 0 10px 0;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.afzallik__ul_list hr {
+  width: 50px;
+  height: 3px;
+  background: #686464;
+  border-radius: 20px;
+}
+.afzallik__ul_list--text {
+  padding-top: 15px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+body.dark .afzallik__title {
+  color: #000;
+}
+body.dark .afzallik__ul_list {
+  background: rgba(243, 243, 243, 0.5);
+}
+body.dark .afzallik__ul_list:hover {
+  box-shadow: 5px 4px 14px rgba(0, 0, 0, 0.55);
+}
+body.dark .afzallik__ul_list p,
+body.dark .afzallik__ul_list h6 {
+  color: black;
+}
+
+.loyiha {
+  padding: 120px 0;
+}
+.loyiha__title {
+  padding-bottom: 40px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+}
+.loyiha__btns {
+  width: 674px;
+  height: 55px;
+  background: rgba(17, 19, 23, 0.5);
+  border: 1px solid #4e4e4e;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  margin: 0 auto;
+}
+.loyiha__btns_btn {
+  width: 25%;
+  height: 99%;
+  border: none;
+  background: linear-gradient(93.5deg, #1e11ad 12.37%, rgba(105, 17, 173, 0.95) 85.28%);
+  border-radius: 30px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.loyiha__ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  gap: 30px;
+}
+.loyiha__ul_list {
+  width: 403px;
+  position: relative;
+}
+.loyiha__ul_list--btn {
+  z-index: 10;
+  position: absolute;
+  top: 15px;
+  right: -5px;
+  width: 121px;
+  height: 37px;
+  background: #ffffff;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  border: 1px solid #fff;
+}
+.loyiha__ul_list:hover .loyiha__ul_list--div {
+  transform: scale(1);
+  opacity: 1;
+}
+.loyiha__ul_list--div {
+  position: absolute;
+  z-index: 23;
+  top: 4%;
+  left: 4%;
+  width: 403px;
+  height: 332px;
+  background: rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  transform: scale(0);
+  opacity: 0;
+}
+.loyiha__ul_list--div-img {
+  position: absolute;
+  right: 0;
+}
+.loyiha__ul_list--div-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.loyiha .center {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 300px;
+}
+.loyiha .center:hover button {
+  width: 300px;
 }/*# sourceMappingURL=main.css.map */
