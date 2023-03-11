@@ -1,9 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
-  width: 1360px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
 }
+body {
+  background: #111317;
+}
 
-img {
-  max-width: 100%;
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

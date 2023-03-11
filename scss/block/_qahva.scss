@@ -1,0 +1,120 @@
+.qahva {
+  padding: 60px 40px;
+  margin: 120px auto;
+  max-width: 1360px;
+  height: 873px;
+  background: rgba(14, 16, 20, 0.9);
+  border: 1px solid #4e4e4e;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  &__wrapper {
+    max-width: 640px;
+
+    &_title {
+      font-family: "Proxima Nova";
+      font-style: italic;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      color: #ffffff;
+    }
+    &_input {
+      margin-top: 25px;
+      background-color: #d41414;
+      background: rgba(14, 16, 20, 0.9);
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #aaaaaa;
+      width: 499px;
+      height: 29px;
+      font-family: "Proxima Nova";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 21px;
+      color: #aaaaaa;
+    }
+
+    &_titl {
+      padding-top: 40px;
+      padding-bottom: 34px;
+      font-family: "Proxima Nova";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ffffff;
+    }
+
+    &_wrap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &--list {
+        width: 50%;
+        height: 25px;
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        .checkbox {
+          width: 20px;
+          height: 20px;
+          border: 1px solid #aaa;
+          border-radius: 4px;
+        }
+        .checkbox.checked {
+          background: #6911ad;
+        }
+        p {
+          color: white;
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    padding: 40px 60px;
+    width: 487px;
+    height: 602px;
+    background: rgba(83, 83, 83, 0.1);
+    box-shadow: 20px 20px 40px rgba(241, 216, 253, 0.08);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    &_title {
+      font-family: "Proxima Nova";
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ffffff;
+      padding-bottom: 40px;
+    }
+
+    &_div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 66px;
+
+      &--list {
+        text-align: center;
+        &-text {
+          font-family: "Proxima Nova";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 29px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.orovchi_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
