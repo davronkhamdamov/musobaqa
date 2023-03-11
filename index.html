@@ -8,14 +8,291 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
-      <img src="./images/Logo.svg" alt="" />
-      <!-- header -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav">
+            <a href="/" class="logo">Logo</a>
+            <div class="nav__navigator">
+              <a href="#">O компании</a>
+              <a href="#">Портфолио</a>
+              <a href="#">Услуги</a>
+              <a href="#">Контакты</a>
+            </div>
+            <div class="nav__services">
+              <div class="nav__services__mode" id="moder">
+                <div class="mode-changer" id="mode"></div>
+                <div class="light">
+                  <img src="./images/light.svg" alt="light" />
+                </div>
+                <div class="dark">
+                  <img src="./images/dark.svg" alt="dark" />
+                </div>
+              </div>
+              <div class="nav__services__phone">
+                <a href="tel:+998 90 777-77-77">+998 90 777-77-77</a>
+                <a href="mailto:chotatam@gmail.com">chotatam@gmail.com</a>
+              </div>
+              <div class="nav__services__btn">
+                <button>Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="hero">
+          <div class="hero__wrap">
+            <div class="hero__wrap__text">
+              <h2>Biz veb-saytlar, ilovalarni ishlab chiqamiz</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+            <div class="button">
+              <button></button>
+              <p>Портфолио</p>
+            </div>
+          </div>
+          <div>
+            <canvas
+              id="cobe"
+              style="width: 500px; height: 500px"
+              width="1000"
+              height="1000"
+            ></canvas>
+          </div>
+        </div>
+      </div>
     </header>
-
+    <!-- main -->
     <main>
-      <section>
-        <!-- section -->
+      <section class="kompny">
+        <div class="container">
+          <h2 class="kompny__title">Kompaniya haqida</h2>
+          <div class="kompny__wrapper">
+            <p class="kompny__wrapper_text">
+              Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion
+              echimlarni taqdim etish maqsadida tashkil etilgan veb-agentlik.
+              Bizning jamoamiz mijozlarga moslashtirilgan va sifatli mahsulotni
+              taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali
+              veb-dizayn, ishlab chiqish va marketing mutaxassislaridan iborat.
+              <br />
+              <br />
+              Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO
+              optimallashtirish, kontent yaratish va reklama kampaniyalarini o'z
+              ichiga olgan keng ko'lamli xizmatlarni taklif etamiz. Biz eng
+              yangi texnologiyalar va innovatsion usullardan foydalangan holda
+              brendni rivojlantirish va sotishni ko'paytirish bilan
+              shug'ullanamiz.
+            </p>
+            <div class="kompny__wrap">
+              <ul class="kompny__wrap_ul">
+                <li class="kompny__wrap_ul--list">
+                  <div class="kompny__wrap_ul--list__div">
+                    <span class="kompny__wrap_ul--list__div_span">20+</span>
+                    <p class="kompny__wrap_ul--list__div_text">
+                      Проектов запустил
+                    </p>
+                  </div>
+                </li>
+                <li class="kompny__wrap_ul--list">
+                  <div class="kompny__wrap_ul--list__div">
+                    <span class="kompny__wrap_ul--list__div_span">4 года</span>
+                    <p class="kompny__wrap_ul--list__div_text">
+                      Опыта разработки
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="kompny__wrap_ul">
+                <li class="kompny__wrap_ul--list">
+                  <div class="kompny__wrap_ul--list__div">
+                    <span class="kompny__wrap_ul--list__div_span">12+</span>
+                    <p class="kompny__wrap_ul--list__div_text">
+                      Профессионалов
+                    </p>
+                  </div>
+                </li>
+                <li class="kompny__wrap_ul--list">
+                  <div class="kompny__wrap_ul--list__div">
+                    <span class="kompny__wrap_ul--list__div_span">4 года</span>
+                    <p class="kompny__wrap_ul--list__div_text">
+                      Опыта разработки
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="afzallik">
+        <div class="container">
+          <h1 class="afzallik__title">Bizning afzalliklarimiz</h1>
+          <ul class="afzallik__ul">
+            <li class="afzallik__ul_list">
+              <img src="./images/track.svg" alt="icon" />
+              <h6 class="afzallik__ul_list--title">Individual yondashuv</h6>
+              <hr />
+              <p class="afzallik__ul_list--text">
+                Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz
+              </p>
+            </li>
+
+            <li class="afzallik__ul_list">
+              <img src="./images/track2.svg" alt="icon" />
+              <h6 class="afzallik__ul_list--title">Ekspertiza</h6>
+              <hr />
+              <p class="afzallik__ul_list--text">
+                Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz
+              </p>
+            </li>
+            <li class="afzallik__ul_list">
+              <img src="./images/track3.svg" alt="icon" />
+              <h6 class="afzallik__ul_list--title">Professional xizmat</h6>
+              <hr />
+              <p class="afzallik__ul_list--text">
+                Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz
+              </p>
+            </li>
+
+            <li class="afzallik__ul_list">
+              <img src="./images/track.svg" alt="icon" />
+              <h6 class="afzallik__ul_list--title">Individual yondashuv</h6>
+              <hr />
+              <p class="afzallik__ul_list--text">
+                Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz
+              </p>
+            </li>
+
+            <li class="afzallik__ul_list">
+              <img src="./images/track2.svg" alt="icon" />
+              <h6 class="afzallik__ul_list--title">Ekspertiza</h6>
+              <hr />
+              <p class="afzallik__ul_list--text">
+                Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz
+              </p>
+            </li>
+
+            <li class="afzallik__ul_list">
+              <img src="./images/track3.svg" alt="icon" />
+              <h6 class="afzallik__ul_list--title">Professional xizmat</h6>
+              <hr />
+              <p class="afzallik__ul_list--text">
+                Biz har bir mijozga g'amxo'rlik qilamiz va ularning
+                ehtiyojlariga javob beradigan echimlarni yaratamiz
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="loyiha">
+        <div class="container">
+          <h1 class="loyiha__title">Bajargan loyihalarimiz</h1>
+          <div class="loyiha__btns">
+            <button class="loyiha__btns_btn">Barchasi</button>
+            <button class="loyiha__btns_btn">Veb sayt</button>
+            <button class="loyiha__btns_btn">Veb dizayn</button>
+            <button class="loyiha__btns_btn">SMM</button>
+            <button class="loyiha__btns_btn">Mobil ilova</button>
+          </div>
+          <ul class="loyiha__ul">
+            <!-- 1 -->
+
+            <li class="loyiha__ul_list">
+              <img src="./images/Rectangle1.png" alt="img" />
+              <button class="loyiha__ul_list--btn">Mobil ilova</button>
+              <div class="loyiha__ul_list--div">
+                <img
+                  class="loyiha__ul_list--div-img"
+                  src="./images/arrow.svg"
+                  alt=""
+                />
+                <p class="loyiha__ul_list--div-text">UYMAKON mobil ilovasi</p>
+              </div>
+            </li>
+            <!-- 2 -->
+            <li class="loyiha__ul_list">
+              <img src="./images/Rectangle2.png" alt="img" />
+              <button class="loyiha__ul_list--btn">Mobil ilova</button>
+              <div class="loyiha__ul_list--div">
+                <img
+                  class="loyiha__ul_list--div-img"
+                  src="./images/arrow.svg"
+                  alt=""
+                />
+                <p class="loyiha__ul_list--div-text">UYMAKON mobil ilovasi</p>
+              </div>
+            </li>
+            <!-- 3 -->
+            <li class="loyiha__ul_list">
+              <img src="../images/Rectangle3.png" alt="img" />
+              <button class="loyiha__ul_list--btn">Mobil ilova</button>
+              <div class="loyiha__ul_list--div">
+                <img
+                  class="loyiha__ul_list--div-img"
+                  src="./images/arrow.svg"
+                  alt=""
+                />
+                <p class="loyiha__ul_list--div-text">UYMAKON mobil ilovasi</p>
+              </div>
+            </li>
+            <!-- 4 -->
+            <li class="loyiha__ul_list">
+              <img src="./images/Rectangle4.png" alt="img" />
+              <button class="loyiha__ul_list--btn">Mobil ilova</button>
+              <div class="loyiha__ul_list--div">
+                <img
+                  class="loyiha__ul_list--div-img"
+                  src="./images/arrow.svg"
+                  alt=""
+                />
+                <p class="loyiha__ul_list--div-text">UYMAKON mobil ilovasi</p>
+              </div>
+            </li>
+            <!-- 5 -->
+            <li class="loyiha__ul_list">
+              <img src="./images/Rectangle5.png" alt="img" />
+              <button class="loyiha__ul_list--btn">Mobil ilova</button>
+              <div class="loyiha__ul_list--div">
+                <img
+                  class="loyiha__ul_list--div-img"
+                  src="./images/arrow.svg"
+                  alt=""
+                />
+                <p class="loyiha__ul_list--div-text">UYMAKON mobil ilovasi</p>
+              </div>
+            </li>
+            <!-- 6 -->
+            <li class="loyiha__ul_list">
+              <img src="./images/Rectangle6.png" alt="img" />
+              <button class="loyiha__ul_list--btn">Mobil ilova</button>
+              <div class="loyiha__ul_list--div">
+                <img
+                  class="loyiha__ul_list--div-img"
+                  src="./images//arrow.svg"
+                  alt=""
+                />
+                <p class="loyiha__ul_list--div-text">UYMAKON mobil ilovasi</p>
+              </div>
+            </li>
+          </ul>
+          <div class="button center">
+            <button></button>
+            <p>Barchasini ko’rish</p>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -25,6 +302,6 @@
 
     <!-- javascript -->
 
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
